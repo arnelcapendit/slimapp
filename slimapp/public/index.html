@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Ajax Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/mustache/mustache.js"></script>
+
+		
+</head>
+<body>
+	<h1>JQueryAjax Tutorial</h1>
+	<h2>Customer Profile List</h2>
+	<ul id="customers"></ul>
+
+	<template id="order-template">
+		<li data-id={{id}}>
+			<p>
+				<strong>Name:</strong> 
+				<span class="noedit name">{{first_name}}</span>
+				<input class="edit name">
+			</p> 
+			<p>
+				<strong>SurName:</strong> 
+				<span class="noedit drink">{{last_name}}</span>
+				<input class="edit drink">
+			</p>
+			<button data-id='{{id}}' class='remove'>X</button>
+			<button class="editOrder noedit">Edit</button>
+			<button class="saveEdit edit">Save</button>
+			<button class="cancelEdit edit">Cancel</button>	
+		</li>
+	</template>
+		
+	<h4>Add Customer Profile</h4>
+	<p>FirstName: <input id="first_name", type="text" name="first_name"></p>
+	<p>LastName: <input id="last_name", type="text" name="last_name"></p>	
+	<p>Email: <input id="email", type="text" name="email"></p>	
+	<p>Phone: <input id="phone", type="text" name="phone"></p>	
+	<p>Address: <input id="address", type="text" name="address"></p>	
+	<p>City: <input id="city" type="text" name="city"></p>	
+	<p>State: <input id="state", type="text" name="state"></p>	
+	<button id="addCustomer">Add Customer</button>
+
+</body>
+</html>

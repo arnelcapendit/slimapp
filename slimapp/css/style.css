@@ -1,0 +1,21 @@
+li{
+	background: lightblue;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+ul{
+	list-style: none;
+}
+
+ul li .edit {
+	display: none;
+}
+
+ul li.edit .edit{
+	display: initial;
+}
+
+ul li.edit .noedit{
+	display: none;
+}
